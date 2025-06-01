@@ -1,4 +1,4 @@
-#  这是充电视频[ClassLoader]的对应仓库。
+#  这是充电视频[ClassLoader](https://www.bilibili.com/video/BV14b7rzxEHY)的对应仓库。
 
 ## 现在你需要通过对应的知识解题：
 
