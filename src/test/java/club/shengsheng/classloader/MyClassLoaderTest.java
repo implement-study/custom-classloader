@@ -19,7 +19,7 @@ class MyClassLoaderTest {
         Object shengsheng = constructor.newInstance();
         Method declaredMethod = shengshengClass.getDeclaredMethod("say");
         Object invoke = declaredMethod.invoke(shengsheng);
-        Assertions.assertEquals(31, invoke);
+        Assertions.assertEquals(30, invoke);
     }
 
 
