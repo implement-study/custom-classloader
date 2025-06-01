@@ -6,4 +6,8 @@ package club.shengsheng;
  **/
 public class MyClassLoader extends ClassLoader {
 
+  public void init(){
+    int a = 0;
+  }
+
 }
