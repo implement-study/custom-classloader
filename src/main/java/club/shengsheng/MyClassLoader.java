@@ -27,7 +27,7 @@ public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         String path = "加密.class";
-        File file = new File("D:\\project\\learn\\custom-classloader", path);
+        File file = new File(".", path);
         try {
             byte[] bytes = Files.readAllBytes(file.toPath());
             for(int i = 0; i < bytes.length; i++) {
