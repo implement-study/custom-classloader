@@ -21,7 +21,8 @@ public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         // 1、读取项目根目录中的加密.class文件，获取class文件的字节数组
-        String filePath = "D:\\Developer\\Github\\shengshengjava\\custom-classloader\\加密.class";
+        String projectDir = System.getProperty("user.dir"); // 获取项目根目录
+        String filePath = projectDir + File.separator + "加密.class";
         byte[] classBytes = readClassFile(filePath);
 
         if (classBytes == null) {
