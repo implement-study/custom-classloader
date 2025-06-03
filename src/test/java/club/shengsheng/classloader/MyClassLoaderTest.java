@@ -14,7 +14,7 @@ class MyClassLoaderTest {
 
     @Test
     void testLoadShengSheng() throws Exception {
-        Class<?> shengshengClass = new MyClassLoader().loadClass("tech.insight.ShengSheng");
+        Class<?> shengshengClass = new MyClassLoader().loadClass("tech.insight.ShengSheng", false);
         Constructor<?> constructor = shengshengClass.getConstructor();
         Object shengsheng = constructor.newInstance();
         Method declaredMethod = shengshengClass.getDeclaredMethod("say");
