@@ -34,7 +34,7 @@ public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         String absolutePath = Paths.get("").toAbsolutePath().toString();
-        String filePath = absolutePath + "\\加密.class";
+        String filePath = absolutePath + File.separator +"加密.class";
         System.out.println("filePath = " + filePath);
         File file = new File(filePath);
         ByteBuffer byteBuffer = handlerClass(file);
