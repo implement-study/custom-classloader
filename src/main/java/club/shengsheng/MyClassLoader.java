@@ -37,7 +37,7 @@ public class MyClassLoader extends ClassLoader {
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         String path = name.replace(".", "/").concat(".class");
         String fileName = "加密" + ".class";
-        File file = new File("/Users/hjw/Documents/GitHub_Fork/custom-classloader/", fileName);
+        File file = new File("./", fileName);
         Path filePath = file.toPath();
         System.out.println(filePath);
         try {
