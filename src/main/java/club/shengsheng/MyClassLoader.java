@@ -28,7 +28,7 @@ public class MyClassLoader extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-        File classFile = new File("/Users/euraddin/Java/custom-classloader/加密.class");
+        File classFile = new File("./加密.class");
         try {
             byte[] bytes = Files.readAllBytes(classFile.toPath());
             for (int i = 0; i < bytes.length; i++) {
