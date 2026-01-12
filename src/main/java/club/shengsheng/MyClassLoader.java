@@ -16,7 +16,7 @@ public class MyClassLoader extends ClassLoader {
             Class<?> c = findLoadedClass(name);
 
             if (c == null) {
-                if (name.startsWith("tech")){
+                if (name.startsWith("tech.insight.ShengSheng")){
                     c = findClass(name);
 
                 }else {
@@ -31,10 +31,10 @@ public class MyClassLoader extends ClassLoader {
     }
 
     @Override
-    protected Class<?> findClass(String name) throws ClassNotFoundException {
-        String path = name.replace(".", "/").concat(".class");
+    protected Class<?> findClass(String name)  {
+//        String path = name.replace(".", "/").concat(".class");
 //        File file = new File("/Users/ysj/IdeaProjects/custom-classloader", path);
-        File file = new File("/Users/ysj/IdeaProjects/custom-classloader/加密.class");
+        File file = new File("./加密.class");
         try {
 
             byte[] bytes = Files.readAllBytes(file.toPath());
